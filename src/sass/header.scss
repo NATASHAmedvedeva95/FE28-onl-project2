@@ -40,6 +40,9 @@
         padding-top: 31px;
         border-bottom: 3px solid #babbc5;
       }
+      &:active{
+        border-bottom: 3px solid #E71414;
+      }
     }
   }
 }

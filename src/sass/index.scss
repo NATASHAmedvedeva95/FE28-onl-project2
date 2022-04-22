@@ -38,6 +38,14 @@ $font-weight: 900;
   font-weight: 900;
   font-size: 1.5rem;
   cursor: pointer;
+  transition: 0.8s;
+  &:hover{
+    background-color: #E71414;
+  }
+  &:active{
+    background-color: #FF4343;
+    box-shadow: 4px 4px 30px #FF4343;
+  }
 }
 
 @media (max-width: 1200px) {

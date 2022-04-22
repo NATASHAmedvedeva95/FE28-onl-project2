@@ -75,6 +75,9 @@ html, body {
   padding-top: 31px;
   border-bottom: 3px solid #babbc5;
 }
+.header_navigation .nav_ul a:active {
+  border-bottom: 3px solid #E71414;
+}
 
 .span_active {
   text-transform: uppercase;
@@ -602,6 +605,14 @@ html, body {
   margin-bottom: 49px;
 }
 
+.icons a:hover {
+  border: 1px solid #508cb4;
+}
+
+.fa-brands:active {
+  color: #508cb4;
+}
+
 @media (max-width: 767px) {
   .location_wrapper {
     display: -webkit-box;
@@ -665,6 +676,16 @@ html, body {
   font-weight: 900;
   font-size: 1.5rem;
   cursor: pointer;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.button:hover {
+  background-color: #E71414;
+}
+.button:active {
+  background-color: #FF4343;
+  -webkit-box-shadow: 4px 4px 30px #FF4343;
+          box-shadow: 4px 4px 30px #FF4343;
 }
 
 @media (max-width: 767px) {
