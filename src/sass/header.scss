@@ -165,7 +165,7 @@
     top:0;
     padding-top: 110px;
     background-color: #252B49;
-    opacity: 0.9;
+    opacity: 0.5;
   }
   .nav_menu.active {
     left: 0;
@@ -179,6 +179,7 @@
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+  
 }
 @media (max-width: 430px) {
   .container {
@@ -199,11 +200,7 @@
       margin-left: 15px;
     }
   }
-  .header_title {
-    line-height: 42px;
-  }
-  .header_block_text {
-    width: 280px;
-    margin: 0 auto;
+  .text.active{
+    display: none;
   }
 }
