@@ -1,0 +1,96 @@
+.row {
+  display: flex;
+  height: 100%;
+}
+
+.item_block_image {
+  width: 700px;
+  img {
+    max-width: 100%;
+    overflow: hidden;
+  }
+}
+.item_block_text {
+  max-width: 700px;
+  background-color: #5c3249;
+  padding: 95px 86px 49px 100px;
+  p {
+    font-family: "Cardo";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 3.06rem;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+  span {
+    font-family: "Raleway";
+
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+.carusel_text{
+  width: 687px;
+  text-align: center;
+  margin: 129px auto 114px;
+  .carusel_title{
+    margin-bottom: 15px;
+  }
+  .carusel_paragraf{
+    margin-bottom: 50px;
+  }
+}
+
+/* Слайдер */
+.slick-slider{
+	min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+
+.slider .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider .slick-dots li{
+	list-style: none;
+	margin: 0px 10px;
+}
+.slider .slick-dots button{
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #7E5D6F;
+	border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active button{
+	background-color: #7E5D6F;
+	border: 1px solid #7E5D6F;
+}
+
+@media (max-width: 767px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .item_block_text{
+    padding: 64px 129px 44px 128px;
+  }
+}
+@media (max-width: 320px) {
+  .item_block_text {
+    padding: 20px;
+  }
+}
+
