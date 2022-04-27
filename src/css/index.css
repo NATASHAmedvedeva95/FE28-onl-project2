@@ -597,6 +597,10 @@ html, body {
   .container {
     max-width: 960px;
   }
+
+  .foto {
+    padding: 90px 0 20px 0;
+  }
 }
 @media (max-width: 767px) {
   .container {
@@ -737,25 +741,54 @@ html, body {
     line-height: 16px;
   }
 }
+.carusel_container {
+  margin: auto;
+  max-width: 1510px;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .item_block_image {
-  width: 700px;
-}
-.item_block_image img {
-  max-width: 100%;
+  width: 50%;
+  height: 476px;
   overflow: hidden;
+  position: relative;
+}
+
+.carusel_image {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 1;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .item_block_text {
-  max-width: 700px;
   background-color: #5c3249;
-  padding: 95px 86px 49px 100px;
+  width: 50%;
+  height: 475px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 142px;
 }
 .item_block_text p {
   font-family: "Cardo";
@@ -767,23 +800,11 @@ html, body {
   color: #ffffff;
 }
 .item_block_text span {
-  font-family: "Raleway";
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 13px;
-  text-transform: uppercase;
+  line-height: 15px;
   color: #ffffff;
-}
-
-.carusel_text {
-  width: 687px;
-  text-align: center;
-  margin: 129px auto 114px;
-}
-.carusel_text .carusel_title {
-  margin-bottom: 15px;
-}
-.carusel_text .carusel_paragraf {
-  margin-bottom: 50px;
 }
 
 /* Слайдер */
@@ -827,30 +848,67 @@ html, body {
   font-size: 0;
   width: 10px;
   height: 10px;
-  border: 1px solid #7E5D6F;
+  border: 1px solid #7e5d6f;
   border-radius: 50%;
 }
 
 .slider .slick-dots li.slick-active button {
-  background-color: #7E5D6F;
-  border: 1px solid #7E5D6F;
+  background-color: #7e5d6f;
+  border: 1px solid #7e5d6f;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
+  .carusel_image {
+    width: 100%;
+    left: 0;
+  }
+
   .row {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
-  .item_block_text {
-    padding: 64px 129px 44px 128px;
+  .item_block_image, .item_block_text {
+    width: 100%;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .item_block_text {
-    padding: 20px;
+    padding-left: 60px;
+    height: 350px;
   }
 }
+@media (max-width: 700px) {
+  .carusel_image {
+    top: 74%;
+  }
+}
+@media (max-width: 430px) {
+  .item_block_text {
+    padding-left: 50px;
+    height: 297px;
+  }
+
+  .carusel_image {
+    top: 80%;
+  }
+}
+.download {
+  padding: 150px 0 114px 0;
+}
+
+.download_block {
+  text-align: center;
+}
+.download_block .carusel_title {
+  margin-bottom: 20px;
+}
+.download_block .carusel_paragraf {
+  margin-bottom: 20px;
+}
+
 .button {
   width: 23.125rem;
   padding: 27px 0;
@@ -860,8 +918,12 @@ html, body {
   font-weight: 900;
   font-size: 1.5rem;
   cursor: pointer;
+  border: none;
   -webkit-transition: 0.8s;
   transition: 0.8s;
+}
+.button a {
+  color: white;
 }
 .button:hover {
   background-color: #E71414;

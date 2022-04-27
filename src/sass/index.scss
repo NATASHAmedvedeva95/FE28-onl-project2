@@ -29,6 +29,7 @@ $font-weight: 900;
 @import "location.scss";
 @import "footer.scss";
 @import "carusel.scss";
+@import "dowload.scss";
 
 .button {
   width: 23.125rem;
@@ -39,7 +40,11 @@ $font-weight: 900;
   font-weight: 900;
   font-size: 1.5rem;
   cursor: pointer;
+  border:none;
   transition: 0.8s;
+  a{
+    color:white;
+  }
   &:hover{
     background-color: #E71414;
   }
