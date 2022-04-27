@@ -1,4 +1,4 @@
-.carusel_container{
+.carusel_container {
   margin: auto;
   max-width: 1510px;
 }
@@ -14,7 +14,7 @@
   overflow: hidden;
   position: relative;
 }
-.carusel_image{
+.carusel_image {
   position: absolute;
   top: 50%;
   right: 0;
@@ -25,15 +25,15 @@
 .item_block_text {
   background-color: #5c3249;
   width: 50%;
-  height: 475px;
+  height: 476px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 142px;
+  padding-left: 90px;
   p {
     font-family: "Cardo";
     font-style: italic;
-    font-weight: 400;
+    font-weight: $font-weight400;
     font-size: 2.5rem;
     line-height: 3.06rem;
     text-transform: capitalize;
@@ -42,7 +42,7 @@
   span {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 13px;
+    font-size: $font_size13;
     line-height: 15px;
     color: #ffffff;
   }
@@ -84,22 +84,22 @@
   border: 1px solid #7e5d6f;
 }
 
-
 @media (max-width: 992px) {
-  .carusel_image{
+  .carusel_image {
     width: 100%;
     left: 0;
   }
   .row {
     flex-direction: column;
   }
-  .item_block_image, .item_block_text{
+  .item_block_image,
+  .item_block_text {
     width: 100%;
   }
 }
 @media (max-width: 767px) {
-  .item_block_text{
-    padding-left: 60px;
+  .item_block_text {
+    padding-left: 30px;
     height: 350px;
   }
 }
@@ -109,11 +109,14 @@
   }
 }
 @media (max-width: 430px) {
-  .item_block_text{
-    padding-left: 50px;
+  .item_block_text {
+    padding: 15px;
     height: 297px;
   }
   .carusel_image {
-    top: 80%;
+    top: 62%;
+  }
+  .item_block_image {
+    height: 250px;
   }
 }

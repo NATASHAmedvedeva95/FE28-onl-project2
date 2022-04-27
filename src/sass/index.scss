@@ -6,7 +6,8 @@
   list-style: none;
 }
 
-html, body {
+html,
+body {
   font-family: "Raleway", sans-serif;
   width: 100%;
 }
@@ -21,7 +22,13 @@ html, body {
 
 $color-white: #ffffff;
 $color_pink: #ff4343;
+$color_red: #e71414;
 $font-weight: 900;
+$font-weight700: 700;
+$font-weight400: 400;
+$font_size13: 0.812rem;
+$font_size18: 1.125rem;
+$font_size24: 1.5rem;
 @import "header.scss";
 @import "items.scss";
 @import "design.scss";
@@ -40,41 +47,44 @@ $font-weight: 900;
   font-weight: 900;
   font-size: 1.5rem;
   cursor: pointer;
-  border:none;
+  border: none;
   transition: 0.8s;
-  a{
-    color:white;
+  a {
+    color: white;
   }
-  &:hover{
-    background-color: #E71414;
+  &:hover {
+    background-color: #e71414;
   }
-  &:active{
-    background-color: #FF4343;
-    box-shadow: 4px 4px 30px #FF4343;
+  &:active {
+    background-color: #ff4343;
+    box-shadow: 4px 4px 30px #ff4343;
   }
-}
-
-@media (max-width: 1200px) {
-  
-}
-
-@media (max-width: 992px) {
- 
 }
 @media (max-width: 767px) {
-  html{
+  html {
     font-size: 13px;
   }
 }
 
 @media (max-width: 430px) {
-  html{
+  html {
     font-size: 12px;
   }
 }
 
 @media (max-width: 320px) {
-  html{
+  html {
     font-size: 9px;
   }
 }
+
+@mixin silly-links {
+  .items_image {
+    transition: 0.8s;
+  }
+  .items_image:hover {
+    transform: scale(1.5) rotate(360deg);
+  }
+}
+
+@include silly-links;

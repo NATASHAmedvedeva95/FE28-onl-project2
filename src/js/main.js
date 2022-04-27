@@ -1,6 +1,7 @@
 let hamburger =  document.querySelector('.hamburger');
 let navMenu =  document.querySelector('.nav_menu');
-let text = document.querySelector('.text');
+let text = document.querySelector('.header_block_text');
+let body = document.querySelector('.body');
 
 
 
@@ -11,6 +12,8 @@ function mobileMenu () {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
     text.classList.toggle('active');
+		body.classList.toggle('lock');
+		body.classList.toggle('active');
 }
 
 $(document).ready(function(){

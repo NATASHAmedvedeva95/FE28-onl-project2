@@ -32,7 +32,7 @@
       text-transform: uppercase;
       color: $color-white;
       font-weight: 700;
-      font-size: 13px;
+      font-size: $font_size13;
       padding-top: 31px;
       padding-bottom: 26px;
       border-bottom: 3px solid rgb(186, 187, 197, 0);
@@ -41,7 +41,8 @@
         border-bottom: 3px solid #babbc5;
       }
       &:active {
-        border-bottom: 3px solid #e71414;
+        border-bottom: 3px solid $color_red;
+        color:$color_red;
       }
     }
   }
@@ -50,7 +51,7 @@
   text-transform: uppercase;
   color: #656980;
   font-size: 1.875rem;
-  font-weight: 900;
+  font-weight: $font-weight;
   &::after {
     content: "box";
     text-transform: uppercase;
@@ -72,7 +73,7 @@
   margin-bottom: 80px;
   p {
     font-weight: 400;
-    font-size: 24px;
+    font-size: $font_size24;
     line-height: 28px;
     color: $color-white;
     text-align: center;
@@ -95,8 +96,11 @@
     margin-bottom: 36px;
     margin-left: 20px;
   }
+  a{
+    color:white;
+  }
 }
-// скрываем его 
+// скрываем его
 .hamburger {
   display: none;
   .bar {
@@ -108,15 +112,11 @@
     background: #ffffff;
   }
 }
-
-
-
 @media (max-width: 1200px) {
   .container {
     max-width: 970px;
   }
 }
-
 @media (max-width: 992px) {
   .container {
     max-width: 960px;
@@ -133,6 +133,9 @@
 @media (max-width: 767px) {
   .container {
     max-width: 100%;
+  }
+  body.lock{
+    overflow: hidden;
   }
   .header_navigation {
     .header_logo {
@@ -153,22 +156,26 @@
   }
   .hamburger {
     display: block;
-    top: 0;
-    right: 35px;
+    top: -4px;
+    right: 20px;
     position: absolute;
   }
   .nav_menu {
-    position: fixed;
+    position: absolute;
     flex-direction: column;
     transition: 0.3s;
+    height: 326px;
+    overflow: auto;
     left: -100%;
-    top:0;
-    padding-top: 110px;
-    background-color: #252B49;
+    top: 0;
+    padding-top: 46px;
     opacity: 0.5;
   }
   .nav_menu.active {
     left: 0;
+  }
+  .header_block_text.active {
+    display: none;
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -179,7 +186,6 @@
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  
 }
 @media (max-width: 430px) {
   .container {
@@ -191,16 +197,7 @@
   .container {
     max-width: 100%;
   }
-  .header_container {
-    padding: 0;
-  }
   .header_navigation {
-    border-bottom: 1px solid rgb(105, 15, 15);
-    .header_logo {
-      margin-left: 15px;
-    }
-  }
-  .text.active{
-    display: none;
+    border-bottom: none;
   }
 }

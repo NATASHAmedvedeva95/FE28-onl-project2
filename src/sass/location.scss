@@ -39,12 +39,11 @@
   margin-bottom: 49px;
 }
 
-.icons a:hover{
+.icons a:hover {
   border: 1px solid rgb(80, 140, 180);
 }
 
-
-.fa-brands:active{
+.fa-brands:active {
   color: rgb(80, 140, 180);
 }
 
@@ -53,13 +52,13 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-.location_block {
-  margin-bottom: 69px;
-  &:last-child {
-    margin-bottom: 0;
   }
-}
+  .location_block {
+    margin-bottom: 69px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 @media (max-width: 430px) {

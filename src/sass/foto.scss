@@ -22,6 +22,11 @@
   height: 269px;
   overflow: hidden;
   margin-bottom: 25px;
+  transition: 0.5s;
+  &:hover{
+    transform: scale(1.1) translate(5px);
+    
+  }
   img {
     width: 100%;
     height: 100%;
@@ -34,7 +39,7 @@
   margin-bottom: 5px;
 }
 .foto_title_pink {
-  font-weight: 400;
+  font-weight: $font-weight400;
   font-size: 1.125rem;
   text-transform: uppercase;
   color: #ff4343;
@@ -43,8 +48,8 @@
 .foto_text {
   margin-bottom: 38px;
   p {
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: $font-weight400;
+    font-size: $font_size18;
     color: #6c7279;
   }
 }

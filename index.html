@@ -12,9 +12,9 @@
     />
     <title>ActiveBox</title>
   </head>
-  <body>
-    <header class="header">
-      <div class="container header_container">
+  <body class="body">
+    <header class="header" id="features" id="Features">
+      <div class="container">
         <nav class="header_navigation">
           <div class="header_logo">
             <a href="#">
@@ -22,30 +22,34 @@
             </a>
           </div>
           <ul class="nav_ul">
-            <li class="nav_ul_list"><a href="#">features</a></li>
-            <li class="nav_ul_list"><a href="#">works</a></li>
-            <li class="nav_ul_list">
-              <a href="#" class="nav_text">our team</a>
+            <li class="nav_ul_list"><a href="#features">features</a></li>
+            <li class="nav_ul_list"><a href="#works">works</a></li>
+            <li class="nav_ul_list"><a href="#our_team" class="nav_text">our team</a>
             </li>
             <li class="nav_ul_list">
-              <a href="#" class="nav_text">testimonials</a>
+              <a href="#testimonials" class="nav_text">testimonials</a>
             </li>
-            <li class="nav_ul_list"><a href="#">download</a></li>
+            <li class="nav_ul_list"><a href="#download">download</a></li>
           </ul>
         </nav>
-        <ul class="nav_menu">
-          <li>features</li>
-          <li>works</li>
-          <li>our team</li>
-          <li>testimonials</li>
-          <li>download</li>
-        </ul>
+        <nav class="nav_menu">
+          <ul class="nav_menu_ul">
+            <li class="nav_ul_list"><a href="#Features">features</a></li>
+            <li class="nav_ul_list"><a href="#Works">works</a></li>
+            <li class="nav_ul_list"><a href="#Our_team" class="nav_text">our team</a>
+            </li>
+            <li class="nav_ul_list">
+              <a href="#Testimonials" class="nav_text">testimonials</a>
+            </li>
+            <li class="nav_ul_list"><a href="#Download">download</a></li>
+          </ul>
+        </nav>
         <div class="hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
-        <div class="header_block_text text">
+        <div class="header_block_text">
           <h1 class="header_title">
             Your Favorite One Page Multi Purpose Template
           </h1>
@@ -59,9 +63,9 @@
         </div>
       </div>
     </header>
-    <section class="items">
+    <section class="items" id="works">
       <div class="container">
-        <div class="items_wrapper">
+        <div class="items_wrapper" id="Works">
           <div class="item">
             <div class="items_image">
               <img src="./src/img/icons/icon_1.png" alt="icon" />
@@ -143,8 +147,8 @@
         </div>
       </div>
     </section>
-    <section class="design">
-      <div class="wrapper">
+    <section class="design" id="features">
+      <div class="wrapper" id="Features">
         <a href="#" class="design_link">
           <div class="design__image">
             <img src="./src/img/foto/cover-11.jpg" alt="work" />
@@ -235,8 +239,8 @@
         </a>
       </div>
     </section>
-    <section class="foto">
-      <div class="foto_wrapper">
+    <section class="foto" id="our_team">
+      <div class="foto_wrapper" id="Our_team">
         <div class="foto_item">
           <div class="foto_image">
             <img src="./src/img/avatar/Rectangle24.png" alt="avatar" />
@@ -319,14 +323,13 @@
         </div>
       </div>
     </section>
-
-    <section class="carusel">
-      <div class="carusel_container">
+    <section class="carusel" id="testimonials">
+      <div class="carusel_container" id="Testimonials">
         <div class="slider">
           <div class="slider__item filter">
             <div class="row">
               <div class="item_block_image ">
-                <img class="carusel_image" src="./src/img/bg.png" alt="" />
+                <img class="carusel_image" src="./src/img/bg.png" alt="foto"/>
               </div>
               <div class="item_block_text">
                   <p class="text_paragraf">
@@ -339,11 +342,11 @@
           </div>
           <div class="slider__item filter">
             <div class="row">
-              <div class="item_block item_block_image">
-                <img src="./src/img/bg.png" alt="" />
+              <div class="item_block_image ">
+                <img class="carusel_image" src="./src/img/bg.png" alt="foto"/>
               </div>
-              <div class="item_block item_block_text">
-                <p class="text_paragraf">
+              <div class="item_block_text">
+                  <p class="text_paragraf">
                   “Integer posuere erat a ante venenatis dapibus posuere velit
                   aliquet. Donec sed odio dui. Aenean eu leo quam...”
                 </p>
@@ -353,11 +356,11 @@
           </div>
           <div class="slider__item filter">
             <div class="row">
-              <div class="item_block item_block_image">
-                <img src="./src/img/bg.png" alt="" />
+              <div class="item_block_image ">
+                <img class="carusel_image" src="./src/img/bg.png" alt="foto"/>
               </div>
-              <div class="item_block item_block_text">
-                <p class="text_paragraf">
+              <div class="item_block_text">
+                  <p class="text_paragraf">
                   “Integer posuere erat a ante venenatis dapibus posuere velit
                   aliquet. Donec sed odio dui. Aenean eu leo quam...”
                 </p>
@@ -367,11 +370,11 @@
           </div>
           <div class="slider__item filter">
             <div class="row">
-              <div class="item_block item_block_image">
-                <img src="./src/img/bg.png" alt="" />
+              <div class="item_block_image ">
+                <img class="carusel_image" src="./src/img/bg.png" alt="foto"/>
               </div>
-              <div class="item_block item_block_text">
-                <p class="text_paragraf">
+              <div class="item_block_text">
+                  <p class="text_paragraf">
                   “Integer posuere erat a ante venenatis dapibus posuere velit
                   aliquet. Donec sed odio dui. Aenean eu leo quam...”
                 </p>
@@ -381,11 +384,11 @@
           </div>
           <div class="slider__item filter">
             <div class="row">
-              <div class="item_block item_block_image">
-                <img src="./src/img/bg.png" alt="" />
+              <div class="item_block_image ">
+                <img class="carusel_image" src="./src/img/bg.png" alt="foto"/>
               </div>
-              <div class="item_block item_block_text">
-                <p class="text_paragraf">
+              <div class="item_block_text">
+                  <p class="text_paragraf">
                   “Integer posuere erat a ante venenatis dapibus posuere velit
                   aliquet. Donec sed odio dui. Aenean eu leo quam...”
                 </p>
@@ -393,11 +396,12 @@
               </div>
             </div>
           </div>
+         
         </div>
       </div>
     </section>
-    <section class="download">
-      <div class="container">
+    <section class="download" id="download">
+      <div class="container" id="Download">
         <div class="download_block">
           <h2 class="carusel_title">
             Are You Ready to Start? Download Now For Free!
@@ -409,8 +413,8 @@
         </div>
       </div>
     </section>
-    <section class="location">
-      <div class="container">
+    <section class="location" id="features">
+      <div class="container" id="Features">
         <div class="location_wrapper">
           <div class="left_block location_block">
             <h4 class="left_block_title">Location</h4>
