@@ -29,7 +29,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 90px;
+  padding: 90px;
   p {
     font-family: "Cardo";
     font-style: italic;
@@ -38,6 +38,7 @@
     line-height: 3.06rem;
     text-transform: capitalize;
     color: #ffffff;
+    margin-bottom: 10px;
   }
   span {
     text-transform: uppercase;
@@ -99,18 +100,23 @@
 }
 @media (max-width: 767px) {
   .item_block_text {
-    padding-left: 30px;
     height: 350px;
+    text-align: center;
+  }
+  .item_block_image {
+    height: 450px;
   }
 }
 @media (max-width: 700px) {
   .carusel_image {
     top: 74%;
   }
+  .item_block_text {
+   padding: 40px;
+  }
 }
 @media (max-width: 430px) {
   .item_block_text {
-    padding: 15px;
     height: 297px;
   }
   .carusel_image {

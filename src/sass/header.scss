@@ -24,7 +24,8 @@
   border-bottom: 1px solid #babbc5;
   .nav_ul {
     display: flex;
-    width: 670px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     a {
       display: block;
       width: 134px;
@@ -66,7 +67,7 @@
   color: $color-white;
   text-transform: uppercase;
   font-size: 4rem;
-  line-height: 75px;
+  line-height: 4.68rem;
   margin-bottom: 31px;
 }
 .header_text {
@@ -123,9 +124,8 @@
   }
   .header_navigation {
     .nav_ul {
-      width: 600px;
       a {
-        width: 113px;
+        width: 100px;
       }
     }
   }
@@ -164,7 +164,7 @@
     position: absolute;
     flex-direction: column;
     transition: 0.3s;
-    height: 326px;
+    height: 300px;
     overflow: auto;
     left: -100%;
     top: 0;
@@ -191,8 +191,13 @@
   .container {
     max-width: 100%;
   }
+  .header_navigation{
+    margin-bottom: 70px;
+  }
+  .header {
+    padding: 38px 0 97px 0;
 }
-
+}
 @media (max-width: 320px) {
   .container {
     max-width: 100%;

@@ -1,80 +1,96 @@
 .wrapper {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
+  align-items:center;
 }
-.design_link {
+.design_item {
+  width: 25%;
+  border:1px solid white;
   position: relative;
-  object-fit: cover;
-  margin: 2px;
+  z-index: 0;
 }
+
 .design__image {
-  width: 333px;
-  height: 330px;
+  padding: 0 0 90%;
+  overflow: hidden;
+  position: relative;
   img {
-    object-fit: cover;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
 .block__mask {
   position: absolute;
   z-index: 3;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   opacity: 0;
-  max-width: 100%;
-  background: rgba(255, 67, 67, 0.8);
+  background: rgba(185, 12, 12, 0.8);
   border: 2px solid #ffffff;
   transition: 0.6s;
   .block__mask_text {
     text-align: center;
     color: #ffffff;
-    padding: 116px 0 100px 0;
+    padding: 120px  0;
   }
   .block__mask_title {
     font-weight: 900;
-    font-size: 1.5rem;
-    line-height: 28px;
+    font-size: 14px;
+    line-height: 1.75rem;
     margin-bottom: 35px;
     text-transform: uppercase;
   }
   .block__mask_paragraf {
     font-weight: 400;
-    font-size: $font_size18;
+    font-size: 14px;
     line-height: 21px;
   }
 }
-.design_link{
+.design_item {
   transition: 0.6s;
-  &:hover{
+  &:hover {
     transform: scale(0.96);
-    box-shadow: 0 0 15px 0 rgba(25, 135, 224, 0.8); 
+    box-shadow: 0 0 15px 0 rgba(25, 135, 224, 0.8);
   }
 }
 
-.design_link:hover .block__mask {
+.design_item:hover .block__mask {
+  background: rgba(185, 12, 12, 0.8);
   opacity: 0.8;
   &:active {
-    background: rgba(185, 12, 12, 0.8);
+    background: rgba(27, 10, 10, 0.8);
     border: 2px solid #ffffff;
   }
 }
 @media (max-width: 767px) {
-  .design__image {
-    max-width: 281px;
-    max-height: 279px;
+  .design_item{
+    width: 33%;
   }
   .block__mask {
     .block__mask_text {
       text-align: center;
       color: #ffffff;
-      padding: 95px 0 57px 0;
+      padding: 50px 0;
     }
+  }
+}
+@media (max-width: 767px) {
+  .design_item{
+    width: 50%;
+  }
+}
+@media (max-width: 320px) {
+  .design_item{
+    width: 80%;
   }
 }

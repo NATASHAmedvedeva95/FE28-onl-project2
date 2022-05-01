@@ -5,7 +5,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .item {
   display: flex;
@@ -82,6 +82,7 @@
       margin-bottom: 65px;
     }
     .items_text {
+      width: 411px;
       p {
         font-size: 14px;
       }
@@ -110,11 +111,14 @@
   .items {
     padding: 60px 0 70px 0;
   }
-  item {
+  .item {
     margin-bottom: 40px;
-  &:nth-child(4),
-  &:nth-child(5) {
+    &:nth-child(4),
+    &:nth-child(5) {
       margin-bottom: 40px;
+    }
+    .items_text {
+      width: 286px;
     }
   }
 }

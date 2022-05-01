@@ -7,29 +7,29 @@
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  max-width: 1170px;
-  margin: auto; 
+  margin: auto;
 }
 .foto_item {
-  width: 275px;
-  margin-right: 23px;
+  width: 270px;
+  margin: 15px;
   &:last-child {
     margin-right: 0;
   }
 }
 .foto_image {
-  width: 269px;
-  height: 269px;
-  overflow: hidden;
+  height: 270px;
   margin-bottom: 25px;
   transition: 0.5s;
-  &:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
     transform: scale(1.1) translate(5px);
-    
   }
   img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
   }
 }
 .foto_title {
@@ -53,12 +53,12 @@
     color: #6c7279;
   }
 }
-.icons{
+.icons {
   display: flex;
-  a{
+  a {
     width: 39px;
     height: 39px;
-    border: 1px solid #C6CBCD;
+    border: 1px solid #c6cbcd;
     margin-right: 6px;
     display: flex;
     align-items: center;
@@ -66,13 +66,13 @@
   }
 }
 .fa-brands {
-  color:#C6CBCD;
+  color: #c6cbcd;
 }
 @media (max-width: 1200px) {
   .container {
     max-width: 970px;
   }
-  .icons{
+  .icons {
     margin-bottom: 20px;
   }
 }
@@ -94,13 +94,32 @@
     }
   }
 }
+@media (max-width: 664px) {
+  .foto_item {
+    margin-bottom: 50px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
 @media (max-width: 430px) {
   .container {
     max-width: 100%;
   }
+  .foto_image {
+    margin-bottom: 0;
+    img {
+      width: 80%;
+      height: 80%;
+      border-radius: 50%;
+    }
+  }
+  .foto {
+    padding: 65px 0 20px 0;
+  }
   .foto_item {
-    margin-right: 0;
-}
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 320px) {
   .container {
